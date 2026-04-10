@@ -1,0 +1,97 @@
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.hero-section {
+    background-color: #999ea2;
+    min-height: 85vh;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-bottom: 60px;
+}
+
+.hero-name { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 300; }
+
+.hero-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.role-content {
+    color: #ffffff; 
+    text-align: left;
+}
+
+.role-content h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff; 
+}
+
+.role-content .arrow {
+    font-size: 2rem;
+    display: block;
+    color: #ffffff; }
+
+.hero-img {
+    width: 280px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.badge-location {
+    background: #1a1a1a; color: #fff; padding: 12px 20px;
+    border-radius: 50px 10px 10px 50px; display: flex; align-items: center;
+}
+
+.icon-circle { background: #444; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-left: 10px; }
+
+.intro-headline { font-size: 1.6rem; font-weight: 500; line-height: 1.4; }
+
+.project-card { border: 1px solid #eee; border-radius: 20px; overflow: hidden; background: #fff; transition: 0.3s; }
+.project-card:hover { transform: translateY(-10px); border-color: #000; }
+.project-img-wrapper { height: 200px; background: #f8f9fa; }
+.project-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+.card-tag { font-size: 0.7rem; color: #888; border: 1px solid #eee; padding: 2px 8px; border-radius: 5px; }
+
+.footer-dark {
+    background-color: #1a1a1a;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.footer-avatar {
+    width: 55px; height: 55px;
+    border-radius: 50%; object-fit: cover;
+}
+
+.contact-pill {
+    border: 1px solid #333;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+}
+
+.btn-get-touch {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-get-touch:hover { background: #fff; color: #000; }
+
+@media (max-width: 768px) {
+    .hero-layout { flex-direction: column; text-align: center; }
+    .footer-dark { border-radius: 20px 20px 0 0; }
+    .display-4 { font-size: 2rem; }
+    .role-content { text-align: center; } /* يخلي النص في النص في الموبايل */
+}
